@@ -12,7 +12,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-path = os.getenv("FILEPATH")
+homedir = os.getenv("FILEPATH")
+path = os.path.expanduser(homedir)
 username = os.getenv("USERNAME")
 password = os.getenv("PASSWORD")
 
