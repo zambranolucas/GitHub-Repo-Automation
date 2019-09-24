@@ -1,4 +1,4 @@
-# python3 -m venv env, non e' necessario il virtualenv il problema stava nel file sh in utilizzavo python invece di python3
+# python3 -m venv env, non e' necessario il virtualenv il problema stava nel file sh in cui utilizzavo python invece di python3
 # source env/bin/activate
 
 

@@ -16,7 +16,7 @@ def delete_repo():
 	
 	# Create a GitHub instance
 	user = Github(username, password).get_user()
-	repo = user.create_repo(full_name=repositoryName)
+	repo = user.get_repo(repositoryName)
 
 	repo.delete()
 	print("GitHub repo: {} successfully deleted\n".format(repositoryName))
