@@ -1,9 +1,9 @@
 #!/bin/bash
 
-source ~/Desktop/Projects/projectInitializationAutomation/.env
+source ~/Documents/Projects/projectInitializationAutomation/.env
 
 function git-create(){
-	python3 ~/Desktop/Projects/projectInitializationAutomation/create.py $1
+	python3 ~/Documents/Projects/projectInitializationAutomation/create.py $1
 	cd $FILEPATH$1
 	echo "#"$1 >> README.md
 	git init
@@ -15,5 +15,5 @@ function git-create(){
 }
 
 function git-remove(){
-	python3 ~/Desktop/Projects/projectInitializationAutomation/delete_v2.py $1
+	python3 ~/Documents/Projects/projectInitializationAutomation/delete_v2.py $1
 }
