@@ -18,7 +18,7 @@ def delete_repo():
 	repositoryName = str(sys.argv[1])
 
 	# Open and sign in Github
-	browser = webdriver.Chrome('/Users/franciscozambrano/Documents/Projects/projectInitializationAutomation/chromedriver')
+	browser = webdriver.Chrome()
 	browser.get("https://github.com/login")
 	pointer = browser.find_element_by_name("login")
 	pointer.send_keys(username)
