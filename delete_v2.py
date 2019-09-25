@@ -1,6 +1,4 @@
 
-# on inspect element -> console -> type $x("XML_PATH") to test xpath (show console drawer ESC(key))
-
 #!usr/bin/env python3
 
 import sys

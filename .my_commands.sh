@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 source ~/Documents/Projects/projectInitializationAutomation/.env
