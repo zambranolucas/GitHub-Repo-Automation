@@ -21,7 +21,7 @@ You'll also need to ensure your SSH keys are stored in Github for the machine yo
 
 
 ## Usage
-There are 2 version either working for each command.
+There are 2 version either working for each command.  
 To run the script type in `git-create <name of your new repo>` if you want to create a new repo.  
 In other side to delete it type in `git-remove <name of your repo>`.
 
