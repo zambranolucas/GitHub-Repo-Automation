@@ -8,7 +8,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-homedir = os.getenv("FILEPATH")
+# homedir = os.getenv("FILEPATH")
+homedir = os.getcwd() + '/'
 path = os.path.expanduser(homedir)
 username = os.getenv("USERNAME")
 password = os.getenv("PASSWORD")
@@ -19,15 +20,15 @@ def create():
 	try:
 		# Create target Directory
 		os.mkdir(path + repositoryName)
-		print("... Local directory " + repositoryName + " succesfully created.\n")
+		print("\n... > Local directory " + repositoryName + " succesfully created.\n")
 	except OSError as err:
-		print("! Local directory " +  repositoryName + " already exists\n")
+		print("\n... > !Local directory " +  repositoryName + " already exists\n")
 	
 	# Create a GitHub instance
 	user = Github(username, password).get_user()
 	user.create_repo(repositoryName)
 
-	print("GitHub repo: {} successfully created\n".format(repositoryName))
+	print("\n... > GitHub repo: {} successfully created\n".format(repositoryName))
 
 if __name__ == "__main__":
 	create()

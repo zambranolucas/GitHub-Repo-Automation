@@ -19,7 +19,7 @@ def delete_repo():
 	repo = user.get_repo(repositoryName)
 
 	repo.delete()
-	print("GitHub repo: {} successfully deleted\n".format(repositoryName))
+	print("... > GitHub repo: {} successfully deleted\n".format(repositoryName))
 
 if __name__ == "__main__":
 	delete_repo()
